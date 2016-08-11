@@ -1,6 +1,6 @@
 # lilypad-countdown
 
-Have a countdown message in your LilyPad server motd.
+Have a countdown timer in your LilyPad server motd that updates every second.
 
 This is a very dirty bash script that will edit your lilypad config with a time and send the command `reload` in the screen called exactly `proxy` every second.
 
