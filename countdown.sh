@@ -18,7 +18,7 @@ function countdown
                 printf "Updated countdown.txt to %02d:%02d:%02d\n" \ $((LEFT/3600)) $(( (LEFT/60)%60)) $((LEFT%60))
 
 		timer=`cat countdown.txt`
-                sed -i -e "s/in:\&e\&l .*!/in:\&e\&l $timer!/g" proxy.yml
+                sed -i -e "s/\&e\&l .*!/in:\&e\&l $timer!/g" proxy.yml
 		screen -S proxy -p 0 -X stuff 'reload'
 
                 sleep 1
