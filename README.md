@@ -1,7 +1,8 @@
 # lilypad-countdown
 
 Have a countdown message in your LilyPad server motd.
-This is just a bash script that will edit your lilypad config with a time and reload the proxy every second.
+
+This is a very dirty bash script that will edit your lilypad config with a time and reload the proxy every second.
 
 ## Usage
 
