@@ -19,8 +19,7 @@ function countdown
 
 		timer=`cat countdown.txt`
                 sed -i -e "s/in:\&e\&l .*!/in:\&e\&l $timer!/g" proxy.yml
-		screen -S proxy -p 0 -X stuff 'reload
-'
+		screen -S proxy -p 0 -X stuff 'reload'
 
                 sleep 1
         done
@@ -28,4 +27,4 @@ function countdown
         echo "        "
 }
 
-countdown "23:50:00"
+countdown "24:00:00"
